@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/devChallengesButtons/static/css/main.0cc4a4a3.chunk.css",
+    "main.js": "/devChallengesButtons/static/js/main.614b418f.chunk.js",
+    "main.js.map": "/devChallengesButtons/static/js/main.614b418f.chunk.js.map",
+    "runtime-main.js": "/devChallengesButtons/static/js/runtime-main.4ffd72e6.js",
+    "runtime-main.js.map": "/devChallengesButtons/static/js/runtime-main.4ffd72e6.js.map",
+    "static/js/2.72d5d6ea.chunk.js": "/devChallengesButtons/static/js/2.72d5d6ea.chunk.js",
+    "static/js/2.72d5d6ea.chunk.js.map": "/devChallengesButtons/static/js/2.72d5d6ea.chunk.js.map",
+    "static/js/3.a38c5297.chunk.js": "/devChallengesButtons/static/js/3.a38c5297.chunk.js",
+    "static/js/3.a38c5297.chunk.js.map": "/devChallengesButtons/static/js/3.a38c5297.chunk.js.map",
+    "index.html": "/devChallengesButtons/index.html",
+    "static/css/main.0cc4a4a3.chunk.css.map": "/devChallengesButtons/static/css/main.0cc4a4a3.chunk.css.map",
+    "static/js/2.72d5d6ea.chunk.js.LICENSE.txt": "/devChallengesButtons/static/js/2.72d5d6ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ffd72e6.js",
+    "static/js/2.72d5d6ea.chunk.js",
+    "static/css/main.0cc4a4a3.chunk.css",
+    "static/js/main.614b418f.chunk.js"
+  ]
+}
