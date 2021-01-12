@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Ubuntu+Mono:wght@400;700&display=swap");
+h1 {
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  color: #4f4f4f;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.cell-title {
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1em;
+  color: #333333;
+}
+
+.btn {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cell {
+  margin-right: 80px;
+}
+.cell:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  padding: 8px 16px;
+  background: #E0E0E0;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.btn:hover, .btn:focus {
+  background: #AEAEAE;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+}
+.btn:disabled {
+  box-shadow: none;
+  pointer-events: none;
+  color: #9e9e9e;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #2962FF;
+  color: #2962FF;
+  box-shadow: none;
+}
+.btn-outline:hover, .btn-outline:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+  box-shadow: none;
+}
+
+.btn-text {
+  padding: 0;
+  box-shadow: none;
+  background-color: transparent;
+  text-align: left;
+  color: #2962FF;
+}
+.btn-text:hover, .btn-text:focus {
+  padding: 8px 16px;
+  background-color: rgba(41, 98, 255, 0.1);
+  box-shadow: none;
+}
+
+.btn-disableShadow {
+  box-shadow: none;
+}
+.btn-disableShadow:hover, .btn-disableShadow:focus {
+  box-shadow: none;
+}
+
+.btn-startIcon-default {
+  display: flex;
+  align-items: center;
+}
+.btn-startIcon-default span {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.btn-endIcon-default {
+  display: flex;
+  align-items: center;
+}
+.btn-endIcon-default span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+}
+
+.btn-md {
+  padding: 8px 16px;
+}
+
+.btn-lg {
+  padding: 11px 22px;
+}
+
+body {
+  font-size: 16px;
+}

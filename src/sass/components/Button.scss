@@ -1,0 +1,134 @@
+//Basic style//
+.btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: $white;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+
+  &:disabled {
+    background: $default;
+    box-shadow: none;
+    pointer-events: none;
+    color: $text-disabled;
+  }
+}
+//Full colored btn//
+@mixin btn-full-colored($color, $bgHover, $shadow) {
+  background: $color;
+  box-shadow: 0px 2px 3px $shadow;
+
+  &:hover, &:focus {
+    background: $bgHover;
+  }
+}
+.btn--default {
+  @include btn-full-colored($default, $default-dark, $default-shadow);
+  color: $text-primary;
+}
+.btn--primary {
+  @include btn-full-colored($primary, $primary-dark, $primary-shadow);
+}
+.btn--secondary {
+  @include btn-full-colored($secondary, $secondary-dark, $secondary-shadow);
+}
+.btn--danger {
+  @include btn-full-colored($danger, $danger-dark, $danger-shadow);
+}
+
+//Outline btn//
+@mixin btn-outline($color, $bgHover) {
+  background-color: transparent;
+  border: 1px solid $color;
+  color: $color;
+  box-shadow: none;
+
+  &:hover, &:focus {
+    background-color: $bgHover;
+    box-shadow: none;
+  }
+}
+.btn--default--outline {
+  @include btn-outline($text-primary, $default);
+}
+.btn--primary--outline {
+  @include btn-outline($primary, $primary-transparent);
+}
+.btn--secondary--outline {
+  @include btn-outline($secondary, $secondary-transparent);
+}
+.btn--danger--outline {
+  @include btn-outline($danger, $danger-transparent);
+}
+
+//Text btn//
+@mixin btn-text($color, $bgHover) {
+  padding: 0;
+  box-shadow: none;
+  background-color: transparent;
+  text-align: left;
+  color: $color;
+
+  &:hover, &:focus {
+    padding: 8px 16px;
+    background-color: $bgHover;
+    box-shadow: none;
+  }
+  &:disabled {
+    background-color: transparent;
+  }
+}
+.btn--default--text {
+  @include btn-text($text-primary, $default);
+}
+.btn--primary--text {
+  @include btn-text($primary, $primary-transparent);
+}
+.btn--secondary--text {
+  @include btn-text($secondary, $secondary-transparent);
+}
+.btn--danger--text {
+  @include btn-text($danger, $danger-transparent);
+}
+
+//Disabled shadow//
+.btn--disableShadow {
+  box-shadow: none;
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+//Icon btn//
+@mixin btn-icon {
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 14px;
+  }
+} 
+.btn--icon--start {
+  @include btn-icon;
+  span {    
+    margin-right: 10px;
+  }
+}
+.btn--icon--end {
+  @include btn-icon;
+  span {
+    margin-left: 10px;
+  }
+}
+
+//Btn size//
+.btn--size--sm {
+  padding: 6px 12px;
+}
+.btn--size--md {
+  padding: 8px 16px;
+}
+.btn--size--lg {
+  padding: 11px 22px;
+}
