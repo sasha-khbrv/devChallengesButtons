@@ -1,5 +1,5 @@
 # devChallenges Buttons
 
-Used React, scss and css-classes.
+Used React, Sass.
 
 Made for https://devchallenges.io/.
